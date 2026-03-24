@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+
+@layer base {
+  html {
+    font-family:'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+  }
+
+  a {
+    @apply px-4 py-2 text-[15px] no-underline tracking-[4px];
+  }
+  a:hover{
+    @apply bg-silver;
+  }
+}
+
+@utility container{
+    max-width:1920px;
+    padding-inline:15px;
+    margin-inline:auto;
+}
+@theme{
+    --breakpoint-xs:"320px";   
+    --color-silver:#f1f1f1;
+}
